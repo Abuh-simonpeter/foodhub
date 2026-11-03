@@ -205,44 +205,6 @@ nav ul li a:hover {
 }
 
 /* ============================= */
-/* ABOUT                         */
-/* ============================= */
-.about {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 50px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.about h2 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 25px;
-}
-
-.about h3 {
-    font-size: 25px;
-    margin-top: 35px;
-}
-
-.about p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #555;
-}
-
-.about ul {
-    padding-left: 25px;
-}
-
-.about li {
-    margin: 15px 0;
-    font-size: 18px;
-}
-
-/* ============================= */
 /* CONTACT                       */
 /* ============================= */
 .contact {
@@ -330,7 +292,7 @@ nav ul li a:hover {
     margin: 40px auto;
 }
 
-h3{
+h3 {
     text-align: center;
     margin-bottom: 9px;
 }
@@ -607,14 +569,124 @@ footer {
 }
 
 /* ============================= */
+/* MODERN ABOUT PAGE (NEW)       */
+/* ============================= */
+.modern-about-page {
+    background-color: #f9f9f9;
+    padding-bottom: 60px;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(135deg, #fff3e6 0%, #ffffff 100%);
+}
+
+.about-hero h2 {
+    font-size: 48px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.about-hero p {
+    font-size: 20px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-content-wrapper {
+    max-width: 900px;
+    margin: -40px auto 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: #fff3e6;
+    color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: left;
+}
+
+.about-card p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.modern-feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.modern-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.modern-feature-list i {
+    color: orange;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.modern-feature-list strong {
+    display: block;
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.modern-feature-list p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* ============================= */
 /* MOBILE                        */
 /* ============================= */
 @media (max-width: 700px) {
-    .about {
-        margin: 30px 15px;
-        padding: 25px;
-    }
-
     .about h2,
     .contact > h2 {
         font-size: 30px;
@@ -631,6 +703,18 @@ footer {
     .food-card {
         width: 100%;
         max-width: 350px;
+    }
+    
+    .about-hero h2 {
+        font-size: 36px;
+    }
+    
+    .about-card {
+        padding: 25px;
+    }
+
+    .modern-feature-list {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -659,6 +743,7 @@ footer {
         gap: 20px;
         padding: 20px 0;
         z-index: 1000;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
     nav ul.show {

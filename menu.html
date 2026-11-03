@@ -18,169 +18,116 @@
 
     <!-- Header -->
     <header>
-
        <nav>
-    <h1>FOODHUB</h1>
-
-    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
-
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="cart.html">🛒 Cart</a></li>
-    </ul>
-</nav>
+            <h1>FOODHUB</h1>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">🛒 Cart</a></li>
+            </ul>
+        </nav>
     </header>
-
 
     <!-- Main Content -->
     <main>
 
         <!-- Menu Heading -->
         <section class="menu-heading">
-
             <h2>Our Menu </h2>
-
             <p>Choose your favorite meal and add it to your cart.</p>
-
         </section>
-
 
         <!-- Food Menu -->
         <section class="menu">
-
             <div class="food-container">
 
-
-                <!-- Pizza -->
+                <!-- 1. Yam and Stew -->
                 <article class="food-card">
-
-                    <img src="images/pizza.jpg" alt="Pizza">
-
-                    <h3>Chicken Pizza</h3>
-
-                    <p>Fresh pizza topped with chicken and cheese.</p>
-
-                    <strong>₦8,000</strong>
-
-                    <button
-    type="button"
-    class="add-to-cart"
-    data-name="Chicken Pizza"
-    data-price="8000">
-    Add to Cart
-</button>
-
-                </article>
-
-
-                <!-- Burger -->
-                <article class="food-card">
-
-                    <img src="images/burger.jpg" alt="Beef Burger">
-
-                    <h3>Beef Burger</h3>
-
-                    <p>Juicy beef burger with fresh vegetables.</p>
-
-                    <strong>₦5,000</strong>
-
-                    <button
-    type="button"
-    class="add-to-cart"
-    data-name="Beef Burger"
-    data-price="5000">
-    Add to Cart
-</button>
-
-                </article>
-
-
-                <!-- Fried Rice -->
-                <article class="food-card">
-
-                    <img src="images/Fried Rice.jpg" alt="Fried Rice">
-
-                    <h3>Fried Rice</h3>
-
-                    <p>Delicious Nigerian-style fried rice.</p>
-
+                    <!-- Using the exact name from your sidebar -->
+                    <img src="images/Yam and beans with plantain.jpg" alt="Yam and Oil Stew">
+                    <h3>Yam & Stew</h3>
+                    <p>Classic comfort food: crispy yam chips paired with savory pepper sauce.</p>
                     <strong>₦4,500</strong>
-
                     <button
-    type="button"
-    class="add-to-cart"
-    data-name="Fried Rice"
-    data-price="4500">
-    Add to Cart
-</button>
-
+                        type="button"
+                        class="add-to-cart"
+                        data-name="Yam & Stew"
+                        data-price="4500">
+                        Add to Cart
+                    </button>
                 </article>
 
+                <!-- 2. Beans and Plantain -->
+                <article class="food-card">
+                    <!-- Using the exact name with the emoji from your sidebar -->
+                    <img src="images/Beans and plantain 😝.jpg" alt="Beans and Plantain">
+                    <h3>Beans & Plantain</h3>
+                    <p>A flavorful combination of savory bean stew and ripe fried plantains.</p>
+                    <strong>₦3,500</strong>
+                    <button
+                        type="button"
+                        class="add-to-cart"
+                        data-name="Beans & Plantain"
+                        data-price="3500">
+                        Add to Cart
+                    </button>
+                </article>
 
-              <article class="food-card">
+                <!-- 3. Ofada Rice -->
+                <article class="food-card">
+                    <!-- Using the exact name from your sidebar -->
+                    <img src="images/rice.jpg" alt="Ofada Rice and Sauce">
+                    <h3>Ofada Rice & Sauce</h3>
+                    <p>Local unpolished rice paired with a spicy, aromatic native stew.</p>
+                    <strong>₦5,500</strong>
+                    <button
+                        type="button"
+                        class="add-to-cart"
+                        data-name="Ofada Rice & Sauce"
+                        data-price="5500">
+                        Add to Cart
+                    </button>
+                </article>
 
-    <img src="images/chicken.jpg" alt="Fried Chicken">
-
-    <h3>Fried Chicken</h3>
-
-    <p>Crispy and delicious fried chicken.</p>
-
-    <strong>₦6,000</strong>
-
-    <button
-        type="button"
-        class="add-to-cart"
-        data-name="Fried Chicken"
-        data-price="6000">
-        Add to Cart
-    </button>
-
-</article>
-
+                <!-- 4. Amala and Ewedu -->
+                <article class="food-card">
+                    <!-- Using the exact name from your sidebar -->
+                    <img src="images/amala.jpg" alt="Amala and Ewedu">
+                    <h3>Amala & Ewedu</h3>
+                    <p>Traditional swallow dish featuring Amala, Ewedu, and savory meat.</p>
+                    <strong>₦4,000</strong>
+                    <button
+                        type="button"
+                        class="add-to-cart"
+                        data-name="Amala & Ewedu"
+                        data-price="4000">
+                        Add to Cart
+                    </button>
+                </article>
 
             </div>
-
         </section>
 
     </main>
 
-
     <!-- Footer -->
     <footer>
-
         <div class="contact-footer">
-
             <h2>Contact Us</h2>
-
             <p>Follow FoodHub on social media</p>
-
             <div class="social-icons">
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-
-                <a href="#" aria-label="Twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
-                <a href="#" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
-
         </div>
-
         <p>&copy; 2026 FoodHub. All rights reserved.</p>
-
     </footer>
-
 
     <script src="js/script.js"></script>
 
